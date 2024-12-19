@@ -1,0 +1,32 @@
+img {
+    width: 50px;
+    display: block;
+  }
+  
+  
+  div{
+    border: 1px solid black;
+    height: 170px;
+    padding: 10px;
+  }
+  
+  #outside{
+    
+    z-index:0;
+    position: absolute;
+    transform-origin: 0;
+    transition: 1s;
+    background-color: yellow ;
+    width: 100%;
+  }
+  
+  #inside{
+    position:absolute;
+    z-index: outside;
+    transition: 1s;
+    width: 100%;
+  }
+  
+  .open-card{
+    transform:rotateY(190deg)
+  }
